@@ -10,6 +10,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const whatsappButtons = document.querySelectorAll("[data-cashback-whatsapp]");
 
+  const cashbackWhatsAppMessage =
+    "Ol\u00E1! \uD83D\uDC4B Quero levar o Salvateck Cashback para o meu condom\u00EDnio! \uD83C\uDFE2\uD83D\uDCB0\n\n" +
+    "Como fa\u00E7o para aderir ao programa?";
+
+  const cashbackWhatsAppParams = new URLSearchParams({
+    phone: "554499343808",
+    text: cashbackWhatsAppMessage,
+  });
+
+  const cashbackWhatsAppUrl = `https://api.whatsapp.com/send?${cashbackWhatsAppParams.toString()}`;
+
+  whatsappButtons.forEach((button) => {
+    button.href = cashbackWhatsAppUrl;
+  });
+
   const backToSiteButton = document.querySelector(".cashback-back");
 
   const trackedSections = [
