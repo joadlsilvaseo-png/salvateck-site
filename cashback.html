@@ -22,8 +22,28 @@
 
   <meta name="description" content="Conheça o Salvateck Cashback, programa em que o condomínio acumula créditos para utilizar em futuras manutenções e melhorias." />
 
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://salvateckgroup.com.br/cashback.html" />
+
   <meta name="theme-color" content="#0D3861" />
-  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Salvateck Group" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://salvateckgroup.com.br/cashback.html" />
+  <meta property="og:title" content="Salvateck Cashback | Manutenção que gera benefícios" />
+  <meta property="og:description" content="Acumule créditos em manutenções e utilize em futuras melhorias para o condomínio." />
+  <meta property="og:image" content="https://salvateckgroup.com.br/assets/images/compartilhamento-salvateck.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="Salvateck Cashback - manutenção que gera benefícios" />
+
+  <!-- Compartilhamento em X / Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Salvateck Cashback | Manutenção que gera benefícios" />
+  <meta name="twitter:description" content="Acumule créditos em manutenções e utilize em futuras melhorias para o condomínio." />
+  <meta name="twitter:image" content="https://salvateckgroup.com.br/assets/images/compartilhamento-salvateck.png" />
 
   <title>
     Salvateck Cashback | Manutenção que gera benefícios
@@ -35,150 +55,13 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="icon" type="image/png" href="assets/logo.salvateck.png" />
+  <link rel="icon" type="image/png" href="assets/images/favicon-salvateck-32.png" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon-salvateck.png" />
 
   <link rel="stylesheet" href="css/cashback.css" />
 </head>
 
-<body class="cashback-is-maintenance">
-
-  <style>
-    .cashback-is-maintenance {
-      overflow: hidden;
-    }
-
-    .cashback-is-maintenance>.cashback-header,
-    .cashback-is-maintenance>.cashback,
-    .cashback-is-maintenance>.cashback-whatsapp-float {
-      display: none !important;
-    }
-
-    .cashback-maintenance {
-      position: fixed;
-      inset: 0;
-      z-index: 99999;
-
-      display: grid;
-      place-items: center;
-
-      padding: 24px;
-
-      font-family: "Montserrat", sans-serif;
-
-      background:
-        radial-gradient(circle at top right,
-          rgba(221, 154, 23, 0.18),
-          transparent 35%),
-        #f4f6f7;
-    }
-
-    .cashback-maintenance__card {
-      width: min(100%, 520px);
-
-      padding: 42px 28px;
-
-      text-align: center;
-
-      background: #ffffff;
-
-      border: 1px solid rgba(13, 56, 97, 0.08);
-      border-radius: 26px;
-
-      box-shadow:
-        0 24px 60px rgba(13, 56, 97, 0.14);
-    }
-
-    .cashback-maintenance__logo {
-      width: 92px;
-      height: auto;
-
-      margin-bottom: 24px;
-    }
-
-    .cashback-maintenance__badge {
-      display: inline-flex;
-
-      margin-bottom: 16px;
-      padding: 8px 14px;
-
-      font-size: 0.7rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-
-      color: #9a680d;
-      background: #fff4dc;
-
-      border-radius: 999px;
-    }
-
-    .cashback-maintenance h1 {
-      margin: 0 0 14px;
-
-      font-size: clamp(1.7rem, 5vw, 2.25rem);
-      line-height: 1.15;
-
-      color: #0d3861;
-    }
-
-    .cashback-maintenance p {
-      margin: 0;
-
-      font-size: 0.9rem;
-      font-weight: 500;
-      line-height: 1.7;
-
-      color: #687078;
-    }
-
-    .cashback-maintenance a {
-      min-height: 48px;
-
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-
-      margin-top: 26px;
-      padding: 0 22px;
-
-      font-size: 0.78rem;
-      font-weight: 800;
-
-      text-decoration: none;
-
-      color: #ffffff;
-      background: #0d3861;
-
-      border-radius: 999px;
-    }
-  </style>
-
-  <section class="cashback-maintenance">
-
-    <div class="cashback-maintenance__card">
-
-      <img src="assets/logo.salvateck.png" alt="Salvateck Group" class="cashback-maintenance__logo" />
-
-      <span class="cashback-maintenance__badge">
-        Em manutenção
-      </span>
-
-      <h1>
-        O Salvateck Cashback está passando por melhorias.
-      </h1>
-
-      <p>
-        Estamos preparando novidades para esta área.
-        Em breve o programa estará disponível novamente.
-      </p>
-
-      <a href="index.html">
-        Voltar para o site
-      </a>
-
-    </div>
-
-  </section>
+<body>
 
   <!-- =====================================================
        CABEÇALHO
